@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="main.css">
+
+<title>Florida Lottery Odds</title>
+</head>
+<body>
+<h1 style="color: white">Florida Lottery Odds<br><br>
+</h1>
+<ul>
+  <li><a href="#generator">Generator</a></li>
+  <li><a href="#hotcold">Hot/Cold</a></li>
+  <li><a class="active" href="#topranked">Top Ranked</a></li>
+  <li><a href="#evensodds">Evens/Odds</a></li>
+  <li><a href="#pastresults">Past Results</a></li>
+</ul>
+<br><br><br><br>
+<div class="ranked">
+
+<br><br>
+<a id="demo">d</a>
+
+<h1>Top Ranked Numbers</h1>
+<div class="dropdown" style="float:center;">
+<button class="dropbtn">Searched Draws</button>
+  <div class="dropdown-content">
+    <a href="#">3 Days</a>
+    <a href="#">4 Days</a>
+    <a href="#">5 Days</a>
+  </div>
+</div><br><br>
+
+<table>
+  <tr>
+    <th>Ranking</th>
+    <th>Number</th>
+    <th>Total Hits</th>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td>Griffin</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#2</td>
+    <td>Griffin</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#3</td>
+    <td>Swanson</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#4</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#5</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#6</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#7</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#8</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#9</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>#10</td>
+    <td>Brown</td>
+    <td>$</td>
+  </tr>
+</table>
+	
+<script type="text/javascript"> 	
+var drawings, text, dLen, i;
+drawings = [
+	["Week 1", "1", "9"]
+	["Week 2", "2", "8"]
+	["Week 3", "3", "7"]
+	["Week 4", "4", "6"]
+
+];
+dLen = drawings.length;
+
+text = "<ul>";
+for (i = 0; i < dLen; i++) {
+  text += "<li>" + drawings[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+	
+</script>
+</div>
+</body>
+</html>
