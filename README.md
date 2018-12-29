@@ -1,5 +1,5 @@
 # JavaScript
-This project is creating an multi-page site for looking up the odds for the Florida Lottery.
+This project is creating a multi-page site for looking up the odds for the Florida Lottery.
 
 Starting off with the Pick 2 Florida Lottery, downloaded the entire results into a database and looking to write code in javascript to show
 the Hot/cold numbers, Top rankings of the numbers by certain a range of drawings, Show results of Odds/Evens by a certain range of drawings,
