@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="main.css">
+
+<title>Florida Lottery Odds</title>
+</head>
+<body>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<h1 style="color: white">Florida Lottery Odds<br><br>
+</h1>
+<ul>
+  <li><a href="/index.html">Generator</a></li>
+  <li><a class="active" href="#hotcold">Hot/Cold</a></li>
+  <li><a href="/topranked.html">Top Ranked</a></li>
+  <li><a href="#evensodds">Evens/Odds</a></li>
+  <li><a href="#pastresults">Past Results</a></li>
+</ul>
+<br><br><br><br>
+<div class="hotcold">
+
+<br><br>
+
+<h1>Hot and Cold Numbers</h1>
+<div class="dropdown" style="float:center;">
+<button class="dropbtn">Searched Draws</button>
+  <div class="dropdown-content">
+    <a href="#">3 Days</a>
+    <a href="#">4 Days</a>
+    <a href="#">5 Days</a>
+  </div>
+</div><br><br>
+
+<table id="table">
+  <tr>
+    <th>Number</th>
+    <th>Total Hits</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Total</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Total</td>
+  </tr>
+</table>
+	
+
+
+
+
+
+
+<table id="">
+  <tr>
+    <th>Ranking</th>
+    <th>Number</th>
+    <th>Total Hits</th>
+  </tr>
+</table>
+<a id="demo2"></a>
+<script>
+var cars = [
+  {number:1, year:2016},
+  {number:2, year:2001},
+  {number:3, year:2010}
+];
+
+
+cars.sort(function(a, b){return a.year - b.year});
+
+for(var i = 1; i = cars[0].length; i++) {
+	
+    // original ranking
+}
+
+displayCars();
+function displayCars() {
+  document.getElementById("demo2").innerHTML =
+  "<table><tr><td>" + cars[0].number + "</td><td>" + cars[0].year + "</td</tr>" +
+  "<tr><td>" + cars[1].number + "</td><td>" + cars[1].year + "</td></tr>" +
+  "<tr><td>" + cars[2].number + "</td><td>" + cars[2].year + "</td></tr></table>";
+}
+</script>
+
+<p id="demo"></p>
+
+
+<table id="table1">
+  <tr><th>Unit</th> <th>Never Met</th> <th>Sometimes Exceeded</th> <th>Exceeded</th> <th>Always exceeded</th> <th>Over Expection</th> <th>Cost</th> <th>Employee#</th></tr>
+   <tr><td>Quality Assurance</td>  <td>20</td>  <td>158</td> <td>63</td> <td>15</td> <td>10</td> <td>2977938.00</td> <td>271</td> </tr>
+</table>
+<br/><!-- Just so that JSFiddle's Result label doesn't overlap the Chart -->
+<div id="chartContainer" style="height: 360px; width: 100%;"></div>
+
+
+<script>
+CanvasJS.addColorSet("customColor", ["#ff0000", "#ffc000", "#4bacc6", "#0070c0", "#77933c"])
+var chart = new CanvasJS.Chart("chartContainer",{   
+  theme: "light2",
+  colorSet: "customColor",
+  title: {
+    text: "",    
+    verticalAlign: "center"
+  },
+  subtitles: [{
+    text: "",
+    verticalAlign: "center",
+    fontWeight: "bold"
+  },{
+    text: "Quality Assurance",
+    verticalAlign: "bottom",
+    fontSize: 24
+  }],
+  legend: {
+    horizontalAlign: "left",
+    verticalAlign: "center"
+  },
+  data: [{
+    type: "doughnut",    
+    showInLegend: true,
+    indexLabel: "#percent%",
+    startAngle: -90,
+    legendMarkerType: "square",
+    dataPoints: []
+  }]
+});
+
+var marks = [];
+var rows = $('#table1 tbody >tr');
+var columns;
+var header;
+for (var i = 1; i < rows.length; i++) {
+  marks = [];
+  header = $(rows[0]).find('th');
+  columns = $(rows[i]).find('td');
+  for (var j = 1; j < columns.length-2; j++) {
+    marks.push({y:parseInt($(columns[j]).html()), legendText: $(header[j]).html()});
+  }
+  chart.options.data[0].dataPoints = marks;
+  chart.options.title.text = CanvasJS.formatNumber($(columns[6]).html(), "#,###");
+  chart.options.subtitles[0].text = $(columns[7]).html();
+  chart.render();
+
+  chart.subtitles[0].set("fontSize", chart.title.get("fontSize"));
+  chart.title.set("padding",{ bottom: chart.title.get("fontSize") * 2, left: chart.legend.bounds.x2 - chart.legend.bounds.x1});
+  chart.subtitles[0].set("padding", { top: chart.title.get("fontSize"), left: chart.legend.bounds.x2 - chart.legend.bounds.x1});
+}
+</script>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="main.css">
+
+<title>Florida Lottery Odds</title>
+</head>
+<body>
+<h1 style="color: white">Florida Lottery Odds<br><br>
+</h1>
+<ul>
+  <li><a class="active" href="#generator">Generator</a></li>
+  <li><a href="/hotcold.html">Hot/Cold</a></li>
+  <li><a href="/topranked.html">Top Ranked</a></li>
+  <li><a href="#evensodds">Evens/Odds</a></li>
+  <li><a href="#pastresults">Past Results</a></li>
+</ul>
+<br><br><br><br>
+<div class="generator">
+   
+    	 
+<script type="text/javascript"> 
+function generateNumbers(){
+var n3 = 10;
+var n2 = Math.floor(Math.random() * 10);
+var n1 = Math.floor(Math.random() * 10);
+document.getElementById("n2").innerHTML = n2;
+document.getElementById("n1").innerHTML = n1;
+while(n1 == n3)
+{
+    n1 = Math.floor(Math.random() * 10);
+}
+while (n2 == n1 || n2 == n3)
+{
+    n2 = Math.floor(Math.random() * 10);
+}  
+}
+</script>
+<br>
+<h1>Pick 2<br><br><a id="n2">0</a>  <a id="n1">0</a></h1>
+<button type="button" class="button" onclick="generateNumbers()" align="center">Generate Random Numbers</button>
+<br><br>
+<h2>Recent Drawing<br> ## Mid-Day and ## Evening<br>
+	as of "Date"</h2>
+</div>
+</body>
+</html>

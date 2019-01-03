@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="main.css">
+
+<title>Florida Lottery Odds</title>
+</head>
+<body>
+<h1 style="color: white">Florida Lottery Odds<br><br>
+</h1>
+<ul>
+  <li><a href="/index.html">Generator</a></li>
+  <li><a href="/hotcold.html">Hot/Cold</a></li>
+  <li><a class="active" href="#topranked">Top Ranked</a></li>
+  <li><a href="#evensodds">Evens/Odds</a></li>
+  <li><a href="#pastresults">Past Results</a></li>
+</ul>
+<br><br><br><br>
+<div class="ranked">
+
+<br><br>
+
+<h1>Top Ranked Numbers</h1>
+<div class="dropdown" style="float:center;">
+<button class="dropbtn">Searched Draws</button>
+  <div class="dropdown-content">
+    <a href="#">3 Days</a>
+    <a href="#">4 Days</a>
+    <a href="#">5 Days</a>
+  </div>
+</div><br><br>
+
+<table id="table">
+  <tr>
+    <th>Ranking</th>
+    <th>Number</th>
+    <th>Total Hits</th>
+  </tr>
+</table>
+	
+<script type="text/javascript"> 	
+       		var array = [["#1","4","C1"],
+                         ["#2","2","C2"],
+                         ["#3","8","C3"],
+                         ["#4","1","C4"],
+                         ["#5","5","C5"],
+                         ["#6","6","C1"],
+                         ["#7","7","C2"],
+                         ["#8","99","C3"],
+                         ["#9","9","C4"],
+                         ["#99","0","C5"]],
+table = document.getElementById("table");
+
+array.sort();
+  document.getElementById("table").innerHTML = array;
+        
+       
+for(var i = 0; i < array.length; i++)
+           {
+// create a new row
+ var newRow = table.insertRow(table.length);
+for(var j = 0; j < array[i].length; j++)
+               {
+ // create a new cell
+var cell = newRow.insertCell(j);
+                   
+   // add value to the cell
+cell.innerHTML = array[i][j];
+}}            
+</script>
+
+	
+
+
+
+<table id="">
+  <tr>
+    <th>Ranking</th>
+    <th>Number</th>
+    <th>Total Hits</th>
+  </tr>
+</table>
+<a id="demo2"></a>
+<script>
+var cars = [
+  {number:1, year:2016},
+  {number:2, year:2001},
+  {number:"BMW", year:2010}
+];
+
+displayCars();
+  cars.sort(function(a, b){return a.year - b.year});
+
+displayCars();
+
+function displayCars() {
+  document.getElementById("demo2").innerHTML =
+  "<table><tr><td>" + cars[0].number + "</td><td>" + cars[0].year + "</td</tr>" +
+  "<tr><td>" + cars[1].number + "</td><td>" + cars[1].year + "</td></tr>" +
+  "<tr><td>" + cars[2].number + "</td><td>" + cars[2].year + "</td></tr></table>";
+}
+</script>
+
+</div>
+</body>
+</html>
