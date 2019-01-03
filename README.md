@@ -5,13 +5,12 @@ Starting off with the Pick 2 Florida Lottery, downloaded the entire results into
 the Hot/cold numbers, Top rankings of the numbers by certain a range of drawings, Show results of Odds/Evens by a certain range of drawings,
 and then of course show all the results since 2016.
 
-First step was creating a random 2 number generator, which is the index page.
+First step was creating a random 2 number generator.
 
 This specific lottery is drawn twice a day "Mid-day and Evening".
 
 Next step right now is coding the javascript for the rankings of the numbers. Also figuring out a way to pull the current drawing date and
-numbers from the Florida Lottery website.  Then of course, adding that current info to the results database.  Looking to make these pages 
-pull the info on their own each day.
+numbers from the Florida Lottery website.  Then of course, adding that current info to the results database.  The idea is to have a self sufficient website that gathered its info automatically, each day. 
 
 It's a big challenge for a first project but I have to start somewhere :)
 
