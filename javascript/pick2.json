@@ -2,13 +2,13 @@
 "data" : [
    {
       "date": "12/25/18",
-      "time": " E",
+      "time": " Evening",
       "firstNumber": 1,
       "secondNumber": 7
    },
    {
       "date": "12/25/18",
-      "time": " M",
+      "time": " Midday",
       "firstNumber": 3,
       "secondNumber": 5
    },
