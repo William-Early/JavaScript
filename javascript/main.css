@@ -1,6 +1,13 @@
 /*Beginning of Generator container*/
 div.generator{
-		height:500px;
+		height:100%;
+		width: 100%;
+		background-color: #cccccc;
+		text-align: center;
+		border-radius: 12px;
+}
+div.results{
+		height:100%;
 		width: 100%;
 		background-color: #cccccc;
 		text-align: center;
