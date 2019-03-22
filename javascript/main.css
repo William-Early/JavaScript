@@ -1,5 +1,6 @@
+/*Beginning of Generator container*/
 div.generator{
-		height:370px;
+		height:500px;
 		width: 100%;
 		background-color: #cccccc;
 		text-align: center;
@@ -38,14 +39,14 @@ div.hotcold{
 }
 
 	.button:hover {
-  		background-color: white; 
+  		background-color: white;
   		color: #00997d;   /* Green */
 		border-color: #00997d;  /* Green */
 }
 	body{
 		background-color: #00997d;  /* Green */
 		font-family: sans-serif;
-		
+
 }
 	ul {
 		list-style-type: none;
