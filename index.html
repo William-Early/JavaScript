@@ -2,30 +2,26 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../main.css">
   <title>Florida Lottery Odds</title>
 
   <style>
     .wrapper{
       display: grid;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto auto auto auto;
       grid-auto-rows: minmax(100px, auto);
       grid-gap: 1em;
     }
 
     .wrapper>div {
-      background: #eee;
+      background: white;
       padding: 1em;
       text-align: center;
     }
 
-    .wrapper>div:nth-child(odd) {
-      background: #ddd;
-    }
-
     .box1{
       /*align-self: start;*/
-      grid-column: 1/4;
+      grid-column: 1/5;
       grid-row: 1/2;
       /* grid-column-start: 1; */
       /* grid-column-end: 3; */
@@ -47,6 +43,11 @@
     }
     .box4{
       grid-column: 3/4;
+      grid-row: 2/3;
+      border: solid black;
+    }
+    .box5{
+      grid-column: 4/5;
       grid-row: 2/3;
       border: solid black;
     }
@@ -88,26 +89,33 @@
           <a href="#">Pick 2</a>
           <a href="#">Pick 3</a>
           <a href="#">Pick 4</a>
+          <a href="#">Pick 5</a>
         </div>
       </div>
     </div>
 
     <div class="box2">
-    <img src="img/pick2.png" alt="Pick 2"><br>
+    <img src="../img/pick2.png" alt="Pick 2"><br>
     <h1><a id="firstP2">0</a> <a id="secondP2">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Random Numbers</button>
+    <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
     </div>
 
     <div class="box3">
-    <img src="img/pick3.png" alt="Pick 3"><br>
+    <img src="../img/pick3.png" alt="Pick 3"><br>
     <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Random Numbers</button>
+    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
     </div>
 
     <div class="box4">
-    <img src="img/pick4.png" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Random Numbers</button>
+    <img src="../img/pick4.png" alt="Pick 4"><br>
+    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a></h1>
+    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box5">
+    <img src="../img/pick5.png" alt="Pick 4"><br>
+    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
+    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
     </div>
 
   </div>
