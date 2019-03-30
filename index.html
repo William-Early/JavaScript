@@ -6,54 +6,74 @@
   <title>Florida Lottery Odds</title>
 
   <style>
-    .wrapper{
+    h1{
+      font-size: 3em;
+    }
+
+    .wrapper {
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto;
       grid-auto-rows: minmax(100px, auto);
-      grid-gap: 5px;
+      grid-gap: 3px;
     }
 
     .wrapper>div {
       background: white;
-      padding: 1em;
+      /* padding: 1em; */
       text-align: center;
     }
-    .flalotto{
-      grid-column: 1/3;
+
+    .nested {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1em;
+      /* border: solid black; */
+      align-items: center;
+    }
+
+    .flalotto {
+      grid-column: 1/2;
       grid-row: 1/2;
     }
-    .mega{
+
+    .mega {
       /*align-self: start;*/
-      grid-column: 3/5;
-      grid-row: 1/2;
+      grid-column: 1/2;
+      grid-row: 2/3;
       /* grid-column-start: 1; */
       /* grid-column-end: 3; */
     }
-    .box2{
+
+    .box2 {
       /*align-self: end;*/
       grid-column: 1/2;
-      grid-row: 2/3;
+      grid-row: 3/4;
     }
-    .box3{
+
+    .box3 {
       /*justify-self: end;*/
-      grid-column: 2/3;
-      grid-row: 2/3;
+      grid-column: 1/2;
+      grid-row: 4/5;
     }
-    .box4{
-      grid-column: 3/4;
-      grid-row: 2/3;
+
+    .box4 {
+      grid-column: 1/2;
+      grid-row: 5/6;
     }
-    .box5{
-      grid-column: 4/5;
-      grid-row: 2/3;
+
+    .box5 {
+      grid-column: 1/2;
+      grid-row: 6/7;
     }
-    .box6{
-      grid-column: 1/3;
-      grid-row: 3/4;
+
+    .box6 {
+      grid-column: 1/2;
+      grid-row: 7/8;
     }
-    .box7{
-      grid-column: 3/5;
-      grid-row: 3/4;
+
+    .box7 {
+      grid-column: 1/2;
+      grid-row: 8/9;
     }
   </style>
 
@@ -87,51 +107,144 @@
     </script>
 
     <div class="flalotto">
-    <img src="img/Floridalotto.jpg" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/Floridalotto.jpg" alt="Florida Lotto" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="mega">
-    <img src="img/megamillions.png" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/megamillions.png" alt="Mega Millions" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="box2">
-    <img src="img/pick2.png" alt="Pick 2"><br>
-    <h1><a id="firstP2">0</a> <a id="secondP2">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/pick2.png" alt="Pick 2" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP2">0</a>
+            <a id="secondP2">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="box3">
-    <img src="img/pick3.png" alt="Pick 3"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/pick3.png" alt="Pick 3" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="box4">
-    <img src="img/pick4.png" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/pick4.png" alt="Pick 4" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="thirdP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="box5">
-    <img src="img/pick5.png" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/pick5.png" alt="Florida Lotto" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="box6">
-    <img src="img/fantasy5.png" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/fantasy5.png" alt="Florida Lotto" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
     <div class="box7">
-    <img src="img/cash4life.png" alt="Pick 4"><br>
-    <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
-    <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+      <div class="nested">
+        <div>
+          <img src="img/cash4life.png" alt="Florida Lotto" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a></h1>
+        </div>
+      </div>
     </div>
 
   </div>
