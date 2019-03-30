@@ -6,7 +6,7 @@
   <title>Florida Lottery Odds</title>
 
   <style>
-    h1{
+    h1 {
       font-size: 3em;
     }
 
@@ -27,6 +27,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1em;
+      /* border: solid black; */
+      align-items: center;
+    }
+
+    .nestedballs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      /* grid-gap: 1em; */
       /* border: solid black; */
       align-items: center;
     }
@@ -75,6 +83,20 @@
       grid-column: 1/2;
       grid-row: 8/9;
     }
+
+    .ball {
+      display: block;
+      width: 60px;
+      height: 60px;
+      /* margin: 30px auto 0; */
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: -15px -15px 40px rgba(100, 100, 100, .5) inset;
+      /* background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
+      /* background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
+      /* background-image: -o-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
+      /* background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
+    }
   </style>
 
 </head>
@@ -114,13 +136,13 @@
         <div>
           <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
         </div>
-        <div>
-          <h1><a id="firstP3">0</a>
-            <a id="secondP3">0</a>
-            <a id="thirdP3">0</a>
-            <a id="secondP3">0</a>
-            <a id="secondP3">0</a>
-            <a id="secondP3">0</a></h1>
+        <div >
+          <h1><a id="firstP3" class="ball">0</a>
+            <a id="secondP3" class="ball">0</a>
+            <a id="thirdP3" class="ball">0</a>
+            <a id="secondP3" class="ball">0</a>
+            <a id="secondP3" class="ball">0</a>
+            <a id="secondP3" class="ball">0</a></h1>
         </div>
       </div>
     </div>
@@ -153,8 +175,8 @@
           <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
         </div>
         <div>
-          <h1><a id="firstP2">0</a>
-            <a id="secondP2">0</a></h1>
+          <h1><a id="firstP2" class="ball">0</a>
+          <a id="secondP2" class="ball">0</a></h1>
         </div>
       </div>
     </div>
