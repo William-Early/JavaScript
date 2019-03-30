@@ -32,8 +32,8 @@
     }
 
     .nestedballs {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: inline-grid;
+      grid-template-columns: auto auto auto auto auto auto;
       /* grid-gap: 1em; */
       /* border: solid black; */
       align-items: center;
@@ -136,13 +136,31 @@
         <div>
           <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
         </div>
-        <div >
-          <h1><a id="firstP3" class="ball">0</a>
-            <a id="secondP3" class="ball">0</a>
-            <a id="thirdP3" class="ball">0</a>
-            <a id="secondP3" class="ball">0</a>
-            <a id="secondP3" class="ball">0</a>
-            <a id="secondP3" class="ball">0</a></h1>
+        <div class="nestedballs">
+          <h1>
+            <div id="firstP3" class="ball">0</div>
+          </h1>
+
+          <h1>
+            <div id="secondP3" class="ball">0</div>
+          </h1>
+
+          <h1>
+            <div id="thirdP3" class="ball">0</div>
+          </h1>
+
+          <h1>
+            <div id="secondP3" class="ball">0</div>
+          </h1>
+
+          <h1>
+            <div id="secondP3" class="ball">0</div>
+          </h1>
+
+          <h1>
+            <div id="secondP3" class="ball">0</div>
+          </h1>
+
         </div>
       </div>
     </div>
@@ -174,9 +192,13 @@
         <div>
           <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
         </div>
-        <div>
-          <h1><a id="firstP2" class="ball">0</a>
-          <a id="secondP2" class="ball">0</a></h1>
+        <div class="nestedballs">
+          <h1>
+            <div id="firstP2" class="ball">0</div>
+          </h1>
+          <h1>
+            <div id="secondP2" class="ball">0</div>
+          </h1>
         </div>
       </div>
     </div>
@@ -187,12 +209,18 @@
           <img src="img/pick3.png" alt="Pick 3" align="center">
         </div>
         <div>
-          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+          <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
         </div>
-        <div>
-          <h1><a id="firstP3">0</a>
-            <a id="secondP3">0</a>
-            <a id="thirdP3">0</a></h1>
+        <div class="nestedballs">
+          <h1>
+            <div id="firstP2" class="ball">0</div>
+          </h1>
+          <h1>
+            <div id="secondP2" class="ball">0</div>
+          </h1>
+          <h1>
+            <div id="secondP2" class="ball">0</div>
+          </h1>
         </div>
       </div>
     </div>
