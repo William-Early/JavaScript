@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../main.css">
+  <title>Florida Lottery Odds</title>
+
+  <style>
+    h1{
+      font-size: 3em;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: minmax(100px, 250px);
+      grid-gap: 5px;
+    }
+
+    .wrapper>div {
+      background: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .nested {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 1em;
+      border: solid black;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .flalotto {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .mega {
+      /*align-self: start;*/
+      grid-column: 1/2;
+      grid-row: 2/3;
+      /* grid-column-start: 1; */
+      /* grid-column-end: 3; */
+    }
+
+    .box2 {
+      /*align-self: end;*/
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .box3 {
+      /*justify-self: end;*/
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    .box4 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+
+    .box5 {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+
+    .box6 {
+      grid-column: 1/2;
+      grid-row: 7/8;
+    }
+
+    .box7 {
+      grid-column: 1/2;
+      grid-row: 8/9;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 style="color: white">Florida Lottery Odds</h1>
+  <ul>
+    <li><a class="active" href="#generator">Number Generator</a></li>
+    <li><a href="/Frequency.html">Number Frequency</a></li>
+    <li><a href="#pastresults">Past Results</a></li>
+  </ul>
+  <br>
+  <div class="wrapper">
+    <script type="text/javascript">
+      function numberGeneratorPick2() {
+        const firstP2 = Math.floor(Math.random() * 10);
+        const secondP2 = Math.floor(Math.random() * 10);
+        document.getElementById("firstP2").innerHTML = firstP2;
+        document.getElementById("secondP2").innerHTML = secondP2;
+      }
+
+      function numberGeneratorPick3() {
+        const firstP3 = Math.floor(Math.random() * 10);
+        const secondP3 = Math.floor(Math.random() * 10);
+        const thirdP3 = Math.floor(Math.random() * 10);
+        document.getElementById("firstP3").innerHTML = firstP3;
+        document.getElementById("secondP3").innerHTML = secondP3;
+        document.getElementById("thirdP3").innerHTML = thirdP3;
+      }
+    </script>
+
+    <div class="flalotto">
+      <div class="nested">
+        <div>
+          <img src="../img/Floridalotto.jpg" alt="Florida Lotto" align="center">
+        </div>
+        <div>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+        </div>
+        <div>
+          <h1><a id="firstP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="thirdP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a>
+            <a id="secondP3">0</a></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="mega">
+      <img src="../img/megamillions.png" alt="Pick 4"><br>
+      <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box2">
+      <img src="../img/pick2.png" alt="Pick 2"><br>
+      <h1><a id="firstP2">0</a> <a id="secondP2">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box3">
+      <img src="../img/pick3.png" alt="Pick 3"><br>
+      <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box4">
+      <img src="../img/pick4.png" alt="Pick 4"><br>
+      <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box5">
+      <img src="../img/pick5.png" alt="Pick 4"><br>
+      <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box6">
+      <img src="../img/fantasy5.png" alt="Pick 4"><br>
+      <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+    <div class="box7">
+      <img src="../img/cash4life.png" alt="Pick 4"><br>
+      <h1><a id="firstP3">0</a> <a id="secondP3">0</a> <a id="thirdP3">0</a> <a id="secondP3">0</a> <a id="secondP3">0</a></h1>
+      <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+    </div>
+
+  </div>
+</body>
+
+</html>
