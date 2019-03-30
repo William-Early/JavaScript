@@ -69,10 +69,10 @@
       background-color: white;
       border-radius: 50%;
       box-shadow: -15px -15px 40px rgba(100, 100, 100, .5) inset;
-      /* background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
-      /* background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
-      /* background-image: -o-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
-      /* background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%); */
+      background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+      background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+      background-image: -o-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
+      background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 220, .2) 0%, transparent 100%);
     }
   </style>
 
@@ -102,6 +102,31 @@
         document.getElementById("firstP3").innerHTML = firstP3;
         document.getElementById("secondP3").innerHTML = secondP3;
         document.getElementById("thirdP3").innerHTML = thirdP3;
+      }
+
+      function numberGeneratorPick4() {
+        const firstP4 = Math.floor(Math.random() * 10);
+        const secondP4 = Math.floor(Math.random() * 10);
+        const thirdP4 = Math.floor(Math.random() * 10);
+        const fourthP4 = Math.floor(Math.random() * 10);
+        document.getElementById("firstP4").innerHTML = firstP4;
+        document.getElementById("secondP4").innerHTML = secondP4;
+        document.getElementById("thirdP4").innerHTML = thirdP4;
+        document.getElementById("fourthP4").innerHTML = fourthP4;
+      }
+
+      function numberGeneratorPick5() {
+        const firstP5 = Math.floor(Math.random() * 10);
+        const secondP5 = Math.floor(Math.random() * 10);
+        const thirdP5 = Math.floor(Math.random() * 10);
+        const fourthP5 = Math.floor(Math.random() * 10);
+        const fifthP5 = Math.floor(Math.random() * 10);
+        document.getElementById("firstP5").innerHTML = firstP5;
+        document.getElementById("secondP5").innerHTML = secondP5;
+        document.getElementById("thirdP5").innerHTML = thirdP5;
+        document.getElementById("fourthP5").innerHTML = fourthP5;
+        document.getElementById("fifthP5").innerHTML = fifthP5;
+
       }
     </script>
 
@@ -133,17 +158,17 @@
           <img src="img/pick3.png" alt="Pick 3" align="center">
         </div>
         <div>
-          <button type="button" class="button" onclick="numberGeneratorPick2()" align="center">Generate Numbers</button>
+          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
         </div>
         <div class="nestedballs">
           <h1>
-            <div id="firstP2" class="ball">0</div>
+            <div id="firstP3" class="ball">0</div>
           </h1>
           <h1>
-            <div id="secondP2" class="ball">0</div>
+            <div id="secondP3" class="ball">0</div>
           </h1>
           <h1>
-            <div id="secondP2" class="ball">0</div>
+            <div id="thirdP3" class="ball">0</div>
           </h1>
         </div>
       </div>
@@ -155,23 +180,23 @@
           <img src="img/pick4.png" alt="Florida Lotto" align="center">
         </div>
         <div>
-          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+          <button type="button" class="button" onclick="numberGeneratorPick4()" align="center">Generate Numbers</button>
         </div>
         <div class="nestedballs">
           <h1>
-            <div id="firstP3" class="ball">0</div>
+            <div id="firstP4" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="secondP3" class="ball">0</div>
+            <div id="secondP4" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="thirdP3" class="ball">0</div>
+            <div id="thirdP4" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="secondP3" class="ball">0</div>
+            <div id="fourthP4" class="ball">0</div>
           </h1>
 
         </div>
@@ -184,27 +209,27 @@
           <img src="img/pick5.png" alt="Pick 5" align="center">
         </div>
         <div>
-          <button type="button" class="button" onclick="numberGeneratorPick3()" align="center">Generate Numbers</button>
+          <button type="button" class="button" onclick="numberGeneratorPick5()" align="center">Generate Numbers</button>
         </div>
         <div class="nestedballs">
           <h1>
-            <div id="firstP3" class="ball">0</div>
+            <div id="firstP5" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="secondP3" class="ball">0</div>
+            <div id="secondP5" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="thirdP3" class="ball">0</div>
+            <div id="thirdP5" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="secondP3" class="ball">0</div>
+            <div id="fourthP5" class="ball">0</div>
           </h1>
 
           <h1>
-            <div id="secondP3" class="ball">0</div>
+            <div id="fifthP5" class="ball">0</div>
           </h1>
 
         </div>
