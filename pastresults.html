@@ -17,6 +17,10 @@
         $('#data-table').DataTable({
             colReorder: true,
             responsive: true,
+            searching: false,
+            paging: true,
+            info: true,
+            autoWidth: true,
             "ajax": "pick2.json",
             columns: [
                  { 'data': 'date' },
