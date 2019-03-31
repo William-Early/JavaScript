@@ -66,7 +66,7 @@ dfn {
 
 h1 {
   margin: .67em 0;
-  font-size: 2em
+  font-size: 3em
   color: white;
 }
 
@@ -1493,7 +1493,7 @@ hr {
 }
 
 .h1, h1 {
-  font-size: 36px
+  font-size: 2em;
 }
 
 .h2, h2 {
