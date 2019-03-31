@@ -1461,7 +1461,7 @@ hr {
   cursor: pointer
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1, .h3, .h4, .h5, .h6, h1, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 600;
   line-height: 1.1;
@@ -1497,7 +1497,7 @@ hr {
 }
 
 .h2, h2 {
-  font-size: 30px
+  font-size: 40px
 }
 
 .h3, h3 {
