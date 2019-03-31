@@ -67,6 +67,7 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em
+  color: white;
 }
 
 mark {
@@ -1368,7 +1369,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff
+  background-color: ##00997d
 }
 
 button, input, select, textarea {
@@ -1462,9 +1463,9 @@ hr {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 1000;
   line-height: 1.1;
-  color: inherit
+  color: white;
 }
 
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
@@ -2718,7 +2719,7 @@ pre code {
 }
 
 table {
-  background-color: transparent
+  background-color: white;
 }
 
 caption {
